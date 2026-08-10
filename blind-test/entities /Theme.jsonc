@@ -1,0 +1,57 @@
+{
+  "name": "Theme",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "movies",
+        "series",
+        "decades",
+        "genres",
+        "games"
+      ]
+    },
+    "icon": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "pink",
+        "cyan",
+        "purple",
+        "yellow",
+        "green",
+        "orange",
+        "blue",
+        "red"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "default": "medium"
+    },
+    "question_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "icon",
+    "color"
+  ]
+}
