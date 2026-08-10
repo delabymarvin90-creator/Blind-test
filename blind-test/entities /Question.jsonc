@@ -1,0 +1,54 @@
+{
+  "name": "Question",
+  "type": "object",
+  "properties": {
+    "theme_id": {
+      "type": "string"
+    },
+    "theme_name": {
+      "type": "string"
+    },
+    "question_type": {
+      "type": "string",
+      "enum": [
+        "guess_artist",
+        "guess_song",
+        "guess_movie",
+        "guess_year",
+        "true_false",
+        "complete_lyrics"
+      ]
+    },
+    "question_text": {
+      "type": "string"
+    },
+    "correct_answer": {
+      "type": "string"
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "points": {
+      "type": "number",
+      "default": 10
+    },
+    "hint": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "song_query": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "theme_id",
+    "question_text",
+    "correct_answer",
+    "choices"
+  ]
+}
