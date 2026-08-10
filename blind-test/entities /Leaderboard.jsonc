@@ -1,0 +1,31 @@
+{
+  "name": "Leaderboard",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number",
+      "default": 0
+    },
+    "theme_name": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "solo",
+        "friends",
+        "tournament"
+      ]
+    },
+    "avatar": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "player_name",
+    "score"
+  ]
+}
